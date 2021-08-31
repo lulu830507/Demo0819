@@ -8,7 +8,6 @@
 import Foundation
 
 let baseURL = "https://www.instagram.com/fastandfuriousde/?__a=1"
-
 enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
