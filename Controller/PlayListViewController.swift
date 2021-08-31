@@ -20,6 +20,7 @@ class PlayListViewController: UIViewController, UITableViewDelegate, UITableView
     var songIndex: Int?
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,14 +30,30 @@ class PlayListViewController: UIViewController, UITableViewDelegate, UITableView
         musicButton[0].layer.cornerRadius = musicButton[0].frame.height / 4
         musicButton[1].layer.cornerRadius = musicButton[1].frame.height / 4
         
-        ITuneController.shared.fetchITuneData { (songs) in
-            self.songs = songs!
-            DispatchQueue.main.async {
-                self.tableview.reloadData()
+        DataController.shared.fetchMusic { result in
+            switch result {
+            case .success(let songs):
+                self.updateUI(with: songs)
+            case .failure(let error):
+                self.displayError(error, title: "Failed to Fetch songItem for \(self.songs)")
             }
         }
         
     }
+    
+    func updateUI(with songItem: [SongType]) {
+        DispatchQueue.main.async {
+            self.songs = songItem
+            self.tableview.reloadData()
+        }
+    }
+    
+    func displayError(_ error: Error, title: String) {
+        DispatchQueue.main.async {
+            print(error)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songs.count
     }

@@ -40,9 +40,16 @@ class MusicViewController: UIViewController {
         
         
 
-        ITuneController.shared.fetchITuneData { (songs) in
-            self.songs = songs!
-            self.playMusic()
+        DataController.shared.fetchMusic() { result in
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let songs):
+                    self.updateUI(with: songs)
+                    self.playMusic()
+                case .failure(let error):
+                    print(error)
+                }
+            }
         }
         
         // AV Player
@@ -57,6 +64,9 @@ class MusicViewController: UIViewController {
             self?.playMusic()
 
         }
+    }
+    func updateUI(with songItem: [SongType]) {
+            self.songs = songItem
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -158,7 +168,7 @@ class MusicViewController: UIViewController {
         }
         
         // Update song image
-        ITuneController.shared.fetchImage(urlStr: songs[songIndex].artworkUrl100) { (image) in
+        DataController.shared.fetchImage(urlStr: songs[songIndex].artworkUrl100) { (image) in
             DispatchQueue.main.async {
                 self.songImage.image = image
             }

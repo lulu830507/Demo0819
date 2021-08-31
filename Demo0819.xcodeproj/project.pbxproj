@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C15081F426DBCDB400D77ED8 /* instagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15081F326DBCDB400D77ED8 /* instagram.swift */; };
+		C15081F626DCCBFF00D77ED8 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15081F526DCCBFF00D77ED8 /* ApiService.swift */; };
+		C15081F826DCD1B700D77ED8 /* photoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15081F726DCD1B700D77ED8 /* photoManager.swift */; };
+		C15081FA26DE09A100D77ED8 /* IGCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15081F926DE09A100D77ED8 /* IGCollectionViewController.swift */; };
+		C150820026DE121100D77ED8 /* IGCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15081FF26DE121100D77ED8 /* IGCollectionReusableView.swift */; };
+		C150820226DE12B400D77ED8 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150820126DE12B400D77ED8 /* PhotoCollectionViewController.swift */; };
+		C150820426DE12CD00D77ED8 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150820326DE12CD00D77ED8 /* PhotoCollectionViewCell.swift */; };
+		C150820626DE12F000D77ED8 /* IGCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150820526DE12F000D77ED8 /* IGCollectionViewCell.swift */; };
+		C150820826DE1E9400D77ED8 /* ExtensionInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C150820726DE1E9400D77ED8 /* ExtensionInt.swift */; };
 		C18532D026CE41C200876FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18532CF26CE41C200876FA5 /* AppDelegate.swift */; };
 		C18532D226CE41C200876FA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18532D126CE41C200876FA5 /* SceneDelegate.swift */; };
 		C18532D426CE41C200876FA5 /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18532D326CE41C200876FA5 /* PlayListViewController.swift */; };
@@ -18,6 +27,8 @@
 		C185330026CE571400876FA5 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18532FF26CE571400876FA5 /* MusicViewController.swift */; };
 		C185330226D240BA00876FA5 /* iTunesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185330126D240BA00876FA5 /* iTunesData.swift */; };
 		C185330726D244DF00876FA5 /* PlayListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185330626D244DF00876FA5 /* PlayListTableViewCell.swift */; };
+		C185334726D7478E00876FA5 /* music.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185334626D7478E00876FA5 /* music.swift */; };
+		C185334926D747BA00876FA5 /* movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = C185334826D747BA00876FA5 /* movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C15081F326DBCDB400D77ED8 /* instagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagram.swift; sourceTree = "<group>"; };
+		C15081F526DCCBFF00D77ED8 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		C15081F726DCD1B700D77ED8 /* photoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photoManager.swift; sourceTree = "<group>"; };
+		C15081F926DE09A100D77ED8 /* IGCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGCollectionViewController.swift; sourceTree = "<group>"; };
+		C15081FF26DE121100D77ED8 /* IGCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IGCollectionReusableView.swift; path = Controller/IGCollectionReusableView.swift; sourceTree = SOURCE_ROOT; };
+		C150820126DE12B400D77ED8 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoCollectionViewController.swift; path = Controller/PhotoCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		C150820326DE12CD00D77ED8 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		C150820526DE12F000D77ED8 /* IGCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGCollectionViewCell.swift; sourceTree = "<group>"; };
+		C150820726DE1E9400D77ED8 /* ExtensionInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionInt.swift; sourceTree = "<group>"; };
 		C18532CC26CE41C200876FA5 /* Demo0819.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo0819.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18532CF26CE41C200876FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C18532D126CE41C200876FA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +75,8 @@
 		C18532FF26CE571400876FA5 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		C185330126D240BA00876FA5 /* iTunesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesData.swift; sourceTree = "<group>"; };
 		C185330626D244DF00876FA5 /* PlayListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListTableViewCell.swift; sourceTree = "<group>"; };
+		C185334626D7478E00876FA5 /* music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = music.swift; sourceTree = "<group>"; };
+		C185334826D747BA00876FA5 /* movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +160,11 @@
 		C185330326D2442E00876FA5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C150820126DE12B400D77ED8 /* PhotoCollectionViewController.swift */,
+				C150820326DE12CD00D77ED8 /* PhotoCollectionViewCell.swift */,
+				C15081FF26DE121100D77ED8 /* IGCollectionReusableView.swift */,
+				C150820526DE12F000D77ED8 /* IGCollectionViewCell.swift */,
+				C15081F926DE09A100D77ED8 /* IGCollectionViewController.swift */,
 				C18532D326CE41C200876FA5 /* PlayListViewController.swift */,
 				C185330626D244DF00876FA5 /* PlayListTableViewCell.swift */,
 				C18532FF26CE571400876FA5 /* MusicViewController.swift */,
@@ -148,7 +175,13 @@
 		C185330426D2445900876FA5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C150820726DE1E9400D77ED8 /* ExtensionInt.swift */,
+				C185334626D7478E00876FA5 /* music.swift */,
+				C15081F326DBCDB400D77ED8 /* instagram.swift */,
+				C15081F526DCCBFF00D77ED8 /* ApiService.swift */,
+				C15081F726DCD1B700D77ED8 /* photoManager.swift */,
 				C185330126D240BA00876FA5 /* iTunesData.swift */,
+				C185334826D747BA00876FA5 /* movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,11 +324,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C185334726D7478E00876FA5 /* music.swift in Sources */,
 				C185330026CE571400876FA5 /* MusicViewController.swift in Sources */,
+				C150820026DE121100D77ED8 /* IGCollectionReusableView.swift in Sources */,
+				C150820426DE12CD00D77ED8 /* PhotoCollectionViewCell.swift in Sources */,
+				C15081F826DCD1B700D77ED8 /* photoManager.swift in Sources */,
+				C150820826DE1E9400D77ED8 /* ExtensionInt.swift in Sources */,
 				C18532D426CE41C200876FA5 /* PlayListViewController.swift in Sources */,
 				C18532D026CE41C200876FA5 /* AppDelegate.swift in Sources */,
+				C15081F426DBCDB400D77ED8 /* instagram.swift in Sources */,
+				C15081FA26DE09A100D77ED8 /* IGCollectionViewController.swift in Sources */,
 				C18532D226CE41C200876FA5 /* SceneDelegate.swift in Sources */,
+				C150820226DE12B400D77ED8 /* PhotoCollectionViewController.swift in Sources */,
 				C185330226D240BA00876FA5 /* iTunesData.swift in Sources */,
+				C150820626DE12F000D77ED8 /* IGCollectionViewCell.swift in Sources */,
+				C185334926D747BA00876FA5 /* movie.swift in Sources */,
+				C15081F626DCCBFF00D77ED8 /* ApiService.swift in Sources */,
 				C185330726D244DF00876FA5 /* PlayListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
